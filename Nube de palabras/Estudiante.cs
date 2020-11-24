@@ -20,9 +20,7 @@ namespace Nube_de_palabras
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             PantallaProfesor p = new PantallaProfesor();
-            
             p.txtRespuestas.Text = txtRes1.Text;
-
             p.Show();
         }
     }

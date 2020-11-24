@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaProfesor));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnCompartir = new System.Windows.Forms.Button();
+            this.btnEnviar = new System.Windows.Forms.Button();
             this.Seleccionar = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dEntrada = new System.Windows.Forms.DomainUpDown();
@@ -39,6 +39,7 @@
             this.txtPregunta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtRespuestas = new System.Windows.Forms.TextBox();
+            this.btnCompartir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -54,8 +55,9 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.pictureBox2);
             this.splitContainer1.Panel1.Controls.Add(this.btnCompartir);
+            this.splitContainer1.Panel1.Controls.Add(this.pictureBox2);
+            this.splitContainer1.Panel1.Controls.Add(this.btnEnviar);
             this.splitContainer1.Panel1.Controls.Add(this.Seleccionar);
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.dEntrada);
@@ -84,15 +86,15 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // btnCompartir
+            // btnEnviar
             // 
-            this.btnCompartir.Location = new System.Drawing.Point(25, 66);
-            this.btnCompartir.Name = "btnCompartir";
-            this.btnCompartir.Size = new System.Drawing.Size(75, 23);
-            this.btnCompartir.TabIndex = 6;
-            this.btnCompartir.Text = "Compartir";
-            this.btnCompartir.UseVisualStyleBackColor = true;
-            this.btnCompartir.Click += new System.EventHandler(this.button1_Click);
+            this.btnEnviar.Location = new System.Drawing.Point(82, 370);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
+            this.btnEnviar.TabIndex = 6;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.button1_Click);
             // 
             // Seleccionar
             // 
@@ -159,6 +161,15 @@
             this.txtRespuestas.Size = new System.Drawing.Size(530, 450);
             this.txtRespuestas.TabIndex = 0;
             // 
+            // btnCompartir
+            // 
+            this.btnCompartir.Location = new System.Drawing.Point(25, 66);
+            this.btnCompartir.Name = "btnCompartir";
+            this.btnCompartir.Size = new System.Drawing.Size(75, 23);
+            this.btnCompartir.TabIndex = 8;
+            this.btnCompartir.Text = "Compartir";
+            this.btnCompartir.UseVisualStyleBackColor = true;
+            // 
             // PantallaProfesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,12 +195,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnCompartir;
+        private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.CheckBox Seleccionar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DomainUpDown dEntrada;
         public System.Windows.Forms.TextBox txtRespuestas;
         public System.Windows.Forms.TextBox txtPregunta;
+        private System.Windows.Forms.Button btnCompartir;
     }
 }
 
