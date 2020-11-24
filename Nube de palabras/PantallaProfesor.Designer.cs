@@ -169,6 +169,7 @@
             this.btnCompartir.TabIndex = 8;
             this.btnCompartir.Text = "Compartir";
             this.btnCompartir.UseVisualStyleBackColor = true;
+            this.btnCompartir.Click += new System.EventHandler(this.btnCompartir_Click);
             // 
             // PantallaProfesor
             // 

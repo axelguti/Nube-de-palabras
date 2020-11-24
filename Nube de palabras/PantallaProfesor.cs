@@ -71,6 +71,10 @@ namespace Nube_de_palabras
             es.Show();
         }
 
-        
+        private void btnCompartir_Click(object sender, EventArgs e)
+        {
+            Compartir com = new Compartir();
+            com.Show();
+        }
     }
 }
