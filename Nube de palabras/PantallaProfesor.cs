@@ -31,12 +31,6 @@ namespace Nube_de_palabras
         {
 
         }
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-            dEntrada.Items.Add("1");
-            dEntrada.Items.Add("2");
-            dEntrada.Items.Add("3");
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -49,25 +43,24 @@ namespace Nube_de_palabras
 
             }
 
-            if (dEntrada.SelectedIndex == 1)
+            if (dEntrada.Value == 1)
             {
-                es.txtRes1.Enabled = true;
-                es.txtRes2.Enabled = false;
-                es.txtRes3.Enabled = false;
+                es.txtRes1.Visible = true;
+                es.txtRes2.Visible = false;
+                es.txtRes3.Visible = false;
             }
-            if (dEntrada.SelectedIndex == 2)
+            if (dEntrada.Value == 2)
             {
-                es.txtRes1.Enabled = true;
-                es.txtRes2.Enabled = true;
-                es.txtRes3.Enabled = false;
+                es.txtRes1.Visible = true;
+                es.txtRes2.Visible = true;
+                es.txtRes3.Visible = false;
             }
-            if (dEntrada.SelectedIndex == 3)
+            if (dEntrada.Value == 3)
             {
-                es.txtRes1.Enabled = true;
-                es.txtRes2.Enabled = true;
-                es.txtRes3.Enabled = true;
+                es.txtRes1.Visible = true;
+                es.txtRes2.Visible = true;
+                es.txtRes3.Visible = true;
             }
-
             es.Show();
         }
 

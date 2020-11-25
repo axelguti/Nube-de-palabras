@@ -45,7 +45,7 @@
             // lblPregunta
             // 
             this.lblPregunta.AutoSize = true;
-            this.lblPregunta.Location = new System.Drawing.Point(98, 40);
+            this.lblPregunta.Location = new System.Drawing.Point(159, 44);
             this.lblPregunta.Name = "lblPregunta";
             this.lblPregunta.Size = new System.Drawing.Size(0, 16);
             this.lblPregunta.TabIndex = 5;
@@ -53,14 +53,14 @@
             // 
             // txtRes3
             // 
-            this.txtRes3.Location = new System.Drawing.Point(57, 153);
+            this.txtRes3.Location = new System.Drawing.Point(57, 113);
             this.txtRes3.Name = "txtRes3";
             this.txtRes3.Size = new System.Drawing.Size(276, 20);
             this.txtRes3.TabIndex = 6;
             // 
             // txtRes2
             // 
-            this.txtRes2.Location = new System.Drawing.Point(57, 118);
+            this.txtRes2.Location = new System.Drawing.Point(57, 139);
             this.txtRes2.Name = "txtRes2";
             this.txtRes2.Size = new System.Drawing.Size(276, 20);
             this.txtRes2.TabIndex = 7;
