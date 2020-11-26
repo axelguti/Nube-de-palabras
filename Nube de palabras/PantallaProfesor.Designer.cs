@@ -39,16 +39,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtPregunta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtRespuestas = new System.Windows.Forms.TextBox();
-            this.Respuesta1 = new System.Windows.Forms.TextBox();
-            this.Respuesta7 = new System.Windows.Forms.TextBox();
-            this.Respuesta3 = new System.Windows.Forms.TextBox();
-            this.Respuesta9 = new System.Windows.Forms.TextBox();
-            this.Respuesta2 = new System.Windows.Forms.TextBox();
-            this.Respuesta6 = new System.Windows.Forms.TextBox();
-            this.Respuesta4 = new System.Windows.Forms.TextBox();
-            this.Respuesta8 = new System.Windows.Forms.TextBox();
             this.Respuesta5 = new System.Windows.Forms.TextBox();
+            this.Respuesta8 = new System.Windows.Forms.TextBox();
+            this.Respuesta4 = new System.Windows.Forms.TextBox();
+            this.Respuesta6 = new System.Windows.Forms.TextBox();
+            this.Respuesta2 = new System.Windows.Forms.TextBox();
+            this.Respuesta9 = new System.Windows.Forms.TextBox();
+            this.Respuesta3 = new System.Windows.Forms.TextBox();
+            this.Respuesta7 = new System.Windows.Forms.TextBox();
+            this.Respuesta1 = new System.Windows.Forms.TextBox();
+            this.txtRespuestas = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -161,9 +161,10 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(22, 267);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 26);
+            this.label3.Size = new System.Drawing.Size(121, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Permitir varios participantes\r\n\r\n";
+            this.label3.Text = "Permitir varias respuetas";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -192,84 +193,15 @@
             this.label1.Text = "Tu Pregunta";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtRespuestas
+            // Respuesta5
             // 
-            this.txtRespuestas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtRespuestas.Location = new System.Drawing.Point(0, 0);
-            this.txtRespuestas.Multiline = true;
-            this.txtRespuestas.Name = "txtRespuestas";
-            this.txtRespuestas.Size = new System.Drawing.Size(530, 450);
-            this.txtRespuestas.TabIndex = 0;
-            // 
-            // Respuesta1
-            // 
-            this.Respuesta1.Enabled = false;
-            this.Respuesta1.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Respuesta1.Location = new System.Drawing.Point(197, 202);
-            this.Respuesta1.Name = "Respuesta1";
-            this.Respuesta1.Size = new System.Drawing.Size(143, 38);
-            this.Respuesta1.TabIndex = 1;
-            this.Respuesta1.Visible = false;
-            // 
-            // Respuesta7
-            // 
-            this.Respuesta7.Enabled = false;
-            this.Respuesta7.Font = new System.Drawing.Font("Microsoft Tai Le", 6F, System.Drawing.FontStyle.Bold);
-            this.Respuesta7.Location = new System.Drawing.Point(138, 180);
-            this.Respuesta7.Name = "Respuesta7";
-            this.Respuesta7.Size = new System.Drawing.Size(126, 18);
-            this.Respuesta7.TabIndex = 2;
-            this.Respuesta7.Visible = false;
-            // 
-            // Respuesta3
-            // 
-            this.Respuesta3.Enabled = false;
-            this.Respuesta3.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Bold);
-            this.Respuesta3.Location = new System.Drawing.Point(346, 209);
-            this.Respuesta3.Name = "Respuesta3";
-            this.Respuesta3.Size = new System.Drawing.Size(143, 31);
-            this.Respuesta3.TabIndex = 3;
-            this.Respuesta3.Visible = false;
-            // 
-            // Respuesta9
-            // 
-            this.Respuesta9.Enabled = false;
-            this.Respuesta9.Font = new System.Drawing.Font("Microsoft Tai Le", 3F, System.Drawing.FontStyle.Bold);
-            this.Respuesta9.Location = new System.Drawing.Point(60, 240);
-            this.Respuesta9.Name = "Respuesta9";
-            this.Respuesta9.Size = new System.Drawing.Size(101, 13);
-            this.Respuesta9.TabIndex = 4;
-            this.Respuesta9.Visible = false;
-            // 
-            // Respuesta2
-            // 
-            this.Respuesta2.Enabled = false;
-            this.Respuesta2.Font = new System.Drawing.Font("Microsoft Tai Le", 16.25F, System.Drawing.FontStyle.Bold);
-            this.Respuesta2.Location = new System.Drawing.Point(167, 246);
-            this.Respuesta2.Name = "Respuesta2";
-            this.Respuesta2.Size = new System.Drawing.Size(143, 35);
-            this.Respuesta2.TabIndex = 5;
-            this.Respuesta2.Visible = false;
-            // 
-            // Respuesta6
-            // 
-            this.Respuesta6.Enabled = false;
-            this.Respuesta6.Font = new System.Drawing.Font("Microsoft Tai Le", 8F, System.Drawing.FontStyle.Bold);
-            this.Respuesta6.Location = new System.Drawing.Point(316, 246);
-            this.Respuesta6.Name = "Respuesta6";
-            this.Respuesta6.Size = new System.Drawing.Size(125, 21);
-            this.Respuesta6.TabIndex = 6;
-            this.Respuesta6.Visible = false;
-            // 
-            // Respuesta4
-            // 
-            this.Respuesta4.Enabled = false;
-            this.Respuesta4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.Respuesta4.Location = new System.Drawing.Point(48, 206);
-            this.Respuesta4.Name = "Respuesta4";
-            this.Respuesta4.Size = new System.Drawing.Size(143, 28);
-            this.Respuesta4.TabIndex = 7;
-            this.Respuesta4.Visible = false;
+            this.Respuesta5.Enabled = false;
+            this.Respuesta5.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold);
+            this.Respuesta5.Location = new System.Drawing.Point(270, 175);
+            this.Respuesta5.Name = "Respuesta5";
+            this.Respuesta5.Size = new System.Drawing.Size(119, 24);
+            this.Respuesta5.TabIndex = 9;
+            this.Respuesta5.Visible = false;
             // 
             // Respuesta8
             // 
@@ -281,15 +213,84 @@
             this.Respuesta8.TabIndex = 8;
             this.Respuesta8.Visible = false;
             // 
-            // Respuesta5
+            // Respuesta4
             // 
-            this.Respuesta5.Enabled = false;
-            this.Respuesta5.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold);
-            this.Respuesta5.Location = new System.Drawing.Point(270, 175);
-            this.Respuesta5.Name = "Respuesta5";
-            this.Respuesta5.Size = new System.Drawing.Size(119, 24);
-            this.Respuesta5.TabIndex = 9;
-            this.Respuesta5.Visible = false;
+            this.Respuesta4.Enabled = false;
+            this.Respuesta4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
+            this.Respuesta4.Location = new System.Drawing.Point(48, 206);
+            this.Respuesta4.Name = "Respuesta4";
+            this.Respuesta4.Size = new System.Drawing.Size(143, 28);
+            this.Respuesta4.TabIndex = 7;
+            this.Respuesta4.Visible = false;
+            // 
+            // Respuesta6
+            // 
+            this.Respuesta6.Enabled = false;
+            this.Respuesta6.Font = new System.Drawing.Font("Microsoft Tai Le", 8F, System.Drawing.FontStyle.Bold);
+            this.Respuesta6.Location = new System.Drawing.Point(316, 246);
+            this.Respuesta6.Name = "Respuesta6";
+            this.Respuesta6.Size = new System.Drawing.Size(125, 21);
+            this.Respuesta6.TabIndex = 6;
+            this.Respuesta6.Visible = false;
+            // 
+            // Respuesta2
+            // 
+            this.Respuesta2.Enabled = false;
+            this.Respuesta2.Font = new System.Drawing.Font("Microsoft Tai Le", 16.25F, System.Drawing.FontStyle.Bold);
+            this.Respuesta2.Location = new System.Drawing.Point(167, 246);
+            this.Respuesta2.Name = "Respuesta2";
+            this.Respuesta2.Size = new System.Drawing.Size(143, 35);
+            this.Respuesta2.TabIndex = 5;
+            this.Respuesta2.Visible = false;
+            // 
+            // Respuesta9
+            // 
+            this.Respuesta9.Enabled = false;
+            this.Respuesta9.Font = new System.Drawing.Font("Microsoft Tai Le", 3F, System.Drawing.FontStyle.Bold);
+            this.Respuesta9.Location = new System.Drawing.Point(60, 240);
+            this.Respuesta9.Name = "Respuesta9";
+            this.Respuesta9.Size = new System.Drawing.Size(101, 13);
+            this.Respuesta9.TabIndex = 4;
+            this.Respuesta9.Visible = false;
+            // 
+            // Respuesta3
+            // 
+            this.Respuesta3.Enabled = false;
+            this.Respuesta3.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Bold);
+            this.Respuesta3.Location = new System.Drawing.Point(346, 209);
+            this.Respuesta3.Name = "Respuesta3";
+            this.Respuesta3.Size = new System.Drawing.Size(143, 31);
+            this.Respuesta3.TabIndex = 3;
+            this.Respuesta3.Visible = false;
+            // 
+            // Respuesta7
+            // 
+            this.Respuesta7.Enabled = false;
+            this.Respuesta7.Font = new System.Drawing.Font("Microsoft Tai Le", 6F, System.Drawing.FontStyle.Bold);
+            this.Respuesta7.Location = new System.Drawing.Point(138, 180);
+            this.Respuesta7.Name = "Respuesta7";
+            this.Respuesta7.Size = new System.Drawing.Size(126, 18);
+            this.Respuesta7.TabIndex = 2;
+            this.Respuesta7.Visible = false;
+            // 
+            // Respuesta1
+            // 
+            this.Respuesta1.Enabled = false;
+            this.Respuesta1.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Respuesta1.Location = new System.Drawing.Point(197, 202);
+            this.Respuesta1.Name = "Respuesta1";
+            this.Respuesta1.Size = new System.Drawing.Size(143, 38);
+            this.Respuesta1.TabIndex = 1;
+            this.Respuesta1.Visible = false;
+            // 
+            // txtRespuestas
+            // 
+            this.txtRespuestas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtRespuestas.Location = new System.Drawing.Point(0, 0);
+            this.txtRespuestas.Multiline = true;
+            this.txtRespuestas.Name = "txtRespuestas";
+            this.txtRespuestas.Size = new System.Drawing.Size(530, 450);
+            this.txtRespuestas.TabIndex = 0;
             // 
             // PantallaProfesor
             // 

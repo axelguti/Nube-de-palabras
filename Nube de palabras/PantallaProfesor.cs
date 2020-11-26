@@ -46,20 +46,20 @@ namespace Nube_de_palabras
             if (dEntrada.Value == 1)
             {
                 es.txtRes1.Visible = true;
-                es.txtRes2.Visible = false;
                 es.txtRes3.Visible = false;
+                es.txtRes2.Visible = false;
             }
             if (dEntrada.Value == 2)
             {
                 es.txtRes1.Visible = true;
-                es.txtRes2.Visible = true;
-                es.txtRes3.Visible = false;
+                es.txtRes3.Visible = true;
+                es.txtRes2.Visible = false;
             }
             if (dEntrada.Value == 3)
             {
                 es.txtRes1.Visible = true;
-                es.txtRes2.Visible = true;
                 es.txtRes3.Visible = true;
+                es.txtRes2.Visible = true;
             }
             es.Show();
         }
@@ -68,6 +68,11 @@ namespace Nube_de_palabras
         {
             Compartir com = new Compartir();
             com.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,8 +30,8 @@
         {
             this.txtRes1 = new System.Windows.Forms.TextBox();
             this.lblPregunta = new System.Windows.Forms.Label();
-            this.txtRes3 = new System.Windows.Forms.TextBox();
             this.txtRes2 = new System.Windows.Forms.TextBox();
+            this.txtRes3 = new System.Windows.Forms.TextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,25 +45,25 @@
             // lblPregunta
             // 
             this.lblPregunta.AutoSize = true;
-            this.lblPregunta.Location = new System.Drawing.Point(159, 44);
+            this.lblPregunta.Location = new System.Drawing.Point(115, 49);
             this.lblPregunta.Name = "lblPregunta";
             this.lblPregunta.Size = new System.Drawing.Size(0, 16);
             this.lblPregunta.TabIndex = 5;
             this.lblPregunta.UseCompatibleTextRendering = true;
             // 
-            // txtRes3
-            // 
-            this.txtRes3.Location = new System.Drawing.Point(57, 113);
-            this.txtRes3.Name = "txtRes3";
-            this.txtRes3.Size = new System.Drawing.Size(276, 20);
-            this.txtRes3.TabIndex = 6;
-            // 
             // txtRes2
             // 
-            this.txtRes2.Location = new System.Drawing.Point(57, 139);
+            this.txtRes2.Location = new System.Drawing.Point(57, 113);
             this.txtRes2.Name = "txtRes2";
             this.txtRes2.Size = new System.Drawing.Size(276, 20);
-            this.txtRes2.TabIndex = 7;
+            this.txtRes2.TabIndex = 6;
+            // 
+            // txtRes3
+            // 
+            this.txtRes3.Location = new System.Drawing.Point(57, 139);
+            this.txtRes3.Name = "txtRes3";
+            this.txtRes3.Size = new System.Drawing.Size(276, 20);
+            this.txtRes3.TabIndex = 7;
             // 
             // btnEnviar
             // 
@@ -81,8 +81,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(403, 234);
             this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.txtRes2);
             this.Controls.Add(this.txtRes3);
+            this.Controls.Add(this.txtRes2);
             this.Controls.Add(this.txtRes1);
             this.Controls.Add(this.lblPregunta);
             this.Name = "Estudiante";
@@ -96,7 +96,7 @@
         private System.Windows.Forms.Button btnEnviar;
         public System.Windows.Forms.Label lblPregunta;
         public System.Windows.Forms.TextBox txtRes1;
-        public System.Windows.Forms.TextBox txtRes3;
         public System.Windows.Forms.TextBox txtRes2;
+        public System.Windows.Forms.TextBox txtRes3;
     }
 }

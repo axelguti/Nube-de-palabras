@@ -22,9 +22,9 @@ namespace Nube_de_palabras
             PantallaProfesor p = new PantallaProfesor();
             p.Respuesta1.Text = txtRes1.Text;
             p.Respuesta1.Visible=true;
-            p.Respuesta2.Text = txtRes2.Text;
+            p.Respuesta2.Text = txtRes3.Text;
             p.Respuesta2.Visible = true;
-            p.Respuesta3.Text = txtRes3.Text;
+            p.Respuesta3.Text = txtRes2.Text;
             p.Respuesta3.Visible = true;
             p.Show();
         }
