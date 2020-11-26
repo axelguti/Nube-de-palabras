@@ -37,7 +37,7 @@ namespace Nube_de_palabras
             Estudiante es = new Estudiante();
 
             es.lblPregunta.Text = txtPregunta.Text;
-
+            this.Hide();
             if(Seleccionar.Checked)
             {
 
