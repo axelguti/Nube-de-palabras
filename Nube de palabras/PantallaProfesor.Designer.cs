@@ -49,6 +49,7 @@
             this.Respuesta7 = new System.Windows.Forms.TextBox();
             this.Respuesta1 = new System.Windows.Forms.TextBox();
             this.txtRespuestas = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -65,6 +66,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.dEntrada);
             this.splitContainer1.Panel1.Controls.Add(this.btnCompartir);
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox2);
@@ -291,6 +293,17 @@
             this.txtRespuestas.Name = "txtRespuestas";
             this.txtRespuestas.Size = new System.Drawing.Size(530, 450);
             this.txtRespuestas.TabIndex = 0;
+            this.txtRespuestas.TextChanged += new System.EventHandler(this.TxtRespuestas_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 415);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Verificar Conexión";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // PantallaProfesor
             // 
@@ -334,6 +347,7 @@
         public System.Windows.Forms.TextBox Respuesta3;
         public System.Windows.Forms.TextBox Respuesta7;
         public System.Windows.Forms.TextBox Respuesta1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

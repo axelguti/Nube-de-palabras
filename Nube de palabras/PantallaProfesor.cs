@@ -74,5 +74,21 @@ namespace Nube_de_palabras
         {
 
         }
+
+        private void TxtRespuestas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            if(new Interaccion().verificarConexion()){
+                MessageBox.Show("Conexion esta abierta");
+            }
+            else
+            {
+                MessageBox.Show("Fallo la conexion con la base de datos");
+            }
+        }
     }
 }
