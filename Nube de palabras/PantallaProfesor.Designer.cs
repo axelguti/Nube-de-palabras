@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaProfesor));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button1 = new System.Windows.Forms.Button();
             this.dEntrada = new System.Windows.Forms.NumericUpDown();
             this.btnCompartir = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -49,7 +50,6 @@
             this.Respuesta7 = new System.Windows.Forms.TextBox();
             this.Respuesta1 = new System.Windows.Forms.TextBox();
             this.txtRespuestas = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -89,10 +89,19 @@
             this.splitContainer1.Panel2.Controls.Add(this.Respuesta7);
             this.splitContainer1.Panel2.Controls.Add(this.Respuesta1);
             this.splitContainer1.Panel2.Controls.Add(this.txtRespuestas);
-            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
             this.splitContainer1.SplitterDistance = 266;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 415);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Verificar Conexión";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // dEntrada
             // 
@@ -166,7 +175,6 @@
             this.label3.Size = new System.Drawing.Size(121, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Permitir varias respuetas";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -176,7 +184,6 @@
             this.label2.Size = new System.Drawing.Size(120, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Entrada por participante";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtPregunta
             // 
@@ -193,7 +200,6 @@
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tu Pregunta";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Respuesta5
             // 
@@ -293,17 +299,6 @@
             this.txtRespuestas.Name = "txtRespuestas";
             this.txtRespuestas.Size = new System.Drawing.Size(530, 450);
             this.txtRespuestas.TabIndex = 0;
-            this.txtRespuestas.TextChanged += new System.EventHandler(this.TxtRespuestas_TextChanged);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(13, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Verificar Conexión";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // PantallaProfesor
             // 
@@ -337,7 +332,6 @@
         public System.Windows.Forms.TextBox txtRespuestas;
         public System.Windows.Forms.TextBox txtPregunta;
         private System.Windows.Forms.Button btnCompartir;
-        private System.Windows.Forms.NumericUpDown dEntrada;
         public System.Windows.Forms.TextBox Respuesta5;
         public System.Windows.Forms.TextBox Respuesta8;
         public System.Windows.Forms.TextBox Respuesta4;
@@ -348,6 +342,7 @@
         public System.Windows.Forms.TextBox Respuesta7;
         public System.Windows.Forms.TextBox Respuesta1;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.NumericUpDown dEntrada;
     }
 }
 
