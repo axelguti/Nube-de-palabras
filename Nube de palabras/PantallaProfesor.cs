@@ -37,8 +37,11 @@ namespace Nube_de_palabras
                     Respuesta2.Visible = false;
                     Respuesta3.Visible = false;
                     es.txtRes1.Visible = true;
-                    es.txtRes3.Visible = false;
                     es.txtRes2.Visible = false;
+                    es.txtRes3.Visible = false;
+                    es.lblIdea1.Visible = true;
+                    es.lblIdea2.Visible = false;
+                    es.lblIdea3.Visible = false;
                 }
                 if (dEntrada.Value == 2)
                 {
@@ -46,8 +49,11 @@ namespace Nube_de_palabras
                     Respuesta2.Visible = true;
                     Respuesta3.Visible = false;
                     es.txtRes1.Visible = true;
-                    es.txtRes3.Visible = true;
-                    es.txtRes2.Visible = false;
+                    es.txtRes2.Visible = true;
+                    es.txtRes3.Visible = false;
+                    es.lblIdea1.Visible = true;
+                    es.lblIdea2.Visible = true;
+                    es.lblIdea3.Visible = false;
                 }
                 if (dEntrada.Value == 3)
                 {
@@ -55,8 +61,11 @@ namespace Nube_de_palabras
                     Respuesta2.Visible = true;
                     Respuesta3.Visible = false;
                     es.txtRes1.Visible = true;
-                    es.txtRes3.Visible = true;
                     es.txtRes2.Visible = true;
+                    es.txtRes3.Visible = true;
+                    es.lblIdea1.Visible = true;
+                    es.lblIdea2.Visible = true;
+                    es.lblIdea3.Visible = true;
                 }
                 es.Show();
             }
