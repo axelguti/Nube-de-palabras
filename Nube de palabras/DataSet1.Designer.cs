@@ -12,10 +12,7 @@
 
 namespace Nube_de_palabras {
     
-    
-    /// <summary>
-    ///Represents a strongly typed in-memory cache of data.
-    ///</summary>
+
     [global::System.Serializable()]
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]

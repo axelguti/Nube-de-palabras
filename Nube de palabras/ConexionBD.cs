@@ -10,7 +10,9 @@ namespace Nube_de_palabras
     public class ConexionBD
     {
         protected OleDbConnection connection;
-
+        /// <summary>
+        /// conexion con la BD.
+        /// </summary>
         protected OleDbConnection ConBD
         {
             get

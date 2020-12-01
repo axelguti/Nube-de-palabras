@@ -16,7 +16,10 @@ namespace Nube_de_palabras
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Valida cuantas preguntas por estudiante se pude ingresar
+        /// el rango es de 1-3 preguntas por participante.
+        /// </summary>
         private void button1_Click(object sender, EventArgs e)
         {
             Estudiante es = new Estudiante();
@@ -70,13 +73,18 @@ namespace Nube_de_palabras
                 es.Show();
             }
         }
+        /// <summary>
+        /// cambia a la interfaz de compartir.
+        /// </summary>
 
         private void btnCompartir_Click(object sender, EventArgs e)
         {
             Compartir com = new Compartir();
             com.Show();
         }
-
+        /// <summary>
+        /// valida si tenemos conexion con la BD.
+        /// </summary>
         private void Button1_Click_1(object sender, EventArgs e)
         {
             if(new Interaccion().verificarConexion()){
@@ -87,7 +95,14 @@ namespace Nube_de_palabras
                 MessageBox.Show("Fallo la conexion con la base de datos");
             }
         }
-
+        /// <summary>
+        /// Verificar la pregunta.
+        /// </summary>
+        /// <param name="pregun">Pregunta echa por el docente.</param>
+        /// <returns>
+        /// retorna verdadero si en la pregunta contiene caracteres
+        /// retorna false cuando la pregunta esta vacia
+        /// </returns>
         public Boolean VerificarPregunta(String pregun)
         {
             if(pregun == "")
