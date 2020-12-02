@@ -19,7 +19,6 @@ namespace Nube_de_palabras
         public Estudiante()
         {
             InitializeComponent();
-            conexion.Open();
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
@@ -28,56 +27,124 @@ namespace Nube_de_palabras
             DateTime dt = DateTime.Now;
             string fecha = dt.ToString("dd-MM-yyyy");
             int estado = 0;
-            try
+
+            if (VerificarNombre(tboxNombre.Text) && VerificarApellido(tboxApp.Text) && VerificarIdea1(txtRes1.Text) && VerificarIdea2(txtRes2.Text) && Verificaridea3(txtRes3.Text))
             {
+                try
+                {
+                    conexion.Open();
+                    string insertar = "insert into tabEstudiante(Nombre, Apellido, Fecha, [Palabra 1], [Palabra 2], [Palabra 3])VALUES(@Nom, @App, @Fecha,@Pal1, @Pal2, @Pal3)";
+                    OleDbCommand cmd = new OleDbCommand(insertar, conexion);
+                    cmd.Parameters.AddWithValue("@Nom", tboxNombre.Text);
+                    cmd.Parameters.AddWithValue("@App", tboxApp.Text);
+                    cmd.Parameters.AddWithValue("@Fecha", fecha);
+                    cmd.Parameters.AddWithValue("@Pal1", txtRes1.Text);
+                    cmd.Parameters.AddWithValue("@Pal2", txtRes2.Text);
+                    cmd.Parameters.AddWithValue("@Pal3", txtRes3.Text);
 
-                string insertar = "insert into tabEstudiante(Nombre, Apellido, Fecha, [Palabra 1], [Palabra 2], [Palabra 3])VALUES(@Nom, @App, @Fecha,@Pal1, @Pal2, @Pal3)";
-                OleDbCommand cmd = new OleDbCommand(insertar, conexion);
-                cmd.Parameters.AddWithValue("@Nom", tboxNombre.Text);
-                cmd.Parameters.AddWithValue("@App", tboxApp.Text);
-                cmd.Parameters.AddWithValue("@Fecha", fecha);
-                cmd.Parameters.AddWithValue("@Pal1", txtRes1.Text);
-                cmd.Parameters.AddWithValue("@Pal2", txtRes2.Text);
-                cmd.Parameters.AddWithValue("@Pal3", txtRes3.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Registro guardado");
+                    cmd.Connection.Close();
+                }
+                catch (DBConcurrencyException ex)
+                {
+                    MessageBox.Show("Error de concurrencia:\n" + ex.Message);
+                    estado = 1;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    estado = 1;
+                }
 
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Registro guardado");
-                cmd.Connection.Close();
 
+                if (estado == 0)
+                {
+                    RespuestasEstudiante r = new RespuestasEstudiante();
+                    PantallaProfesor p = new PantallaProfesor();
+                    this.Hide();
+
+                    p.Respuesta1.Text = txtRes1.Text;
+                    p.Respuesta1.Visible = true;
+                    p.Respuesta2.Text = txtRes3.Text;
+                    p.Respuesta2.Visible = true;
+                    p.Respuesta3.Text = txtRes2.Text;
+                    p.Respuesta3.Visible = true;
+                    p.Show();
+
+                    r.Respuesta1.Text = txtRes1.Text;
+                    r.Respuesta1.Visible = true;
+                    r.Respuesta2.Text = txtRes3.Text;
+                    r.Respuesta2.Visible = true;
+                    r.Respuesta3.Text = txtRes2.Text;
+                    r.Respuesta3.Visible = true;
+                    r.Show();
+                }
             }
+        }
 
-            catch (DBConcurrencyException ex)
+        public Boolean VerificarNombre(String nombre)
+        {
+            if (nombre == "")
             {
-                MessageBox.Show("Error de concurrencia:\n" + ex.Message);
-                estado = 1;
+                MessageBox.Show("Error, Ingrese algun nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
-                estado = 1;
+                return true;
             }
+        }
 
-            if(estado == 0)
+        public Boolean VerificarApellido(String apellido)
+        {
+            if (apellido == "")
             {
-                RespuestasEstudiante r = new RespuestasEstudiante();
-                PantallaProfesor p = new PantallaProfesor();
-                this.Hide();
+                MessageBox.Show("Error, Ingrese un apellido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
-                p.Respuesta1.Text = txtRes1.Text;
-                p.Respuesta1.Visible = true;
-                p.Respuesta2.Text = txtRes3.Text;
-                p.Respuesta2.Visible = true;
-                p.Respuesta3.Text = txtRes2.Text;
-                p.Respuesta3.Visible = true;
-                p.Show();
+        public Boolean VerificarIdea1(String idea1)
+        {
+            if (idea1 == "")
+            {
+                MessageBox.Show("Error, Ingrese una primera idea", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
-                r.Respuesta1.Text = txtRes1.Text;
-                r.Respuesta1.Visible = true;
-                r.Respuesta2.Text = txtRes3.Text;
-                r.Respuesta2.Visible = true;
-                r.Respuesta3.Text = txtRes2.Text;
-                r.Respuesta3.Visible = true;
-                r.Show();
+        public Boolean VerificarIdea2(String idea2)
+        {
+            if (idea2 == "")
+            {
+                MessageBox.Show("Error, Ingrese una segunda idea", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        public Boolean Verificaridea3(String idea3)
+        {
+            if (idea3 == "")
+            {
+                MessageBox.Show("Error, Ingrese una tercera idea", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
 
