@@ -20,7 +20,10 @@ namespace Nube_de_palabras
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// inserta en la BD los datos de los estudiantes con sus respuestas.
+        /// </summary>
+        /// <param name="fecha">te dice la fecha exacta.</param>
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             //Comando para obtener la fecha 
