@@ -5,7 +5,11 @@
 
         private System.ComponentModel.IContainer components = null;
 
-
+        /// <summary>
+        /// Se deshace de los recursos (distintos de la memoria) que usa <see cref="T:System.Windows.Forms.Form" />.
+        /// </summary>
+        /// <param name="disposing">Es <see langword="true" /> para liberar tanto recursos administrados como no administrados;
+        /// es <see langword="false" /> para liberar únicamente recursos no administrados.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
