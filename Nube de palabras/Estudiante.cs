@@ -168,7 +168,7 @@ namespace Nube_de_palabras
         /// <summary>
         /// valida la tercera respuesta.
         /// </summary>
-        /// <param name="idea3">la Respuesta 1.</param>
+        /// <param name="idea3">la Respuesta 3.</param>
         /// <returns>
         /// retorna false si la respuesta esta sin completar
         /// retorna true si la respuesta a sido ingresado
