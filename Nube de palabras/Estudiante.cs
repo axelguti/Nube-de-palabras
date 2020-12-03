@@ -85,7 +85,14 @@ namespace Nube_de_palabras
                 }
             }
         }
-
+        /// <summary>
+        /// validar nombre  
+        /// </summary>
+        /// <param name="nombre">el nombre del participante.</param>
+        /// <returns>
+        /// retorna false si en nombre esta sin completar
+        /// retorna true si el nombre a sido ingresado
+        /// </returns>
         public Boolean VerificarNombre(String nombre)
         {
             if (nombre == "")
@@ -98,7 +105,14 @@ namespace Nube_de_palabras
                 return true;
             }
         }
-
+        /// <summary>
+        /// valida el apellido.
+        /// </summary>
+        /// <param name="apellido">el apellido del participante.</param>
+        /// <returns>
+        /// retorna false si el apellido esta sin completar
+        /// retorna true si el apellido a sido ingresado
+        /// </returns>
         public Boolean VerificarApellido(String apellido)
         {
             if (apellido == "")
@@ -111,7 +125,14 @@ namespace Nube_de_palabras
                 return true;
             }
         }
-
+        /// <summary>
+        /// valida la primera respuesta.
+        /// </summary>
+        /// <param name="idea1">la Respuesta 1.</param>
+        /// <returns>
+        /// retorna false si la respuesta esta sin completar
+        /// retorna true si la respuesta a sido ingresado
+        /// </returns>
         public Boolean VerificarIdea1(String idea1)
         {
             if (idea1 == "")
@@ -124,7 +145,14 @@ namespace Nube_de_palabras
                 return true;
             }
         }
-
+        /// <summary>
+        /// valida la Segunda respuesta.
+        /// </summary>
+        /// <param name="idea2">la Respuesta 2.</param>
+        /// <returns>
+        /// retorna false si la respuesta esta sin completar
+        /// retorna true si la respuesta a sido ingresado
+        /// </returns>
         public Boolean VerificarIdea2(String idea2)
         {
             if (idea2 == "")
@@ -137,7 +165,14 @@ namespace Nube_de_palabras
                 return true;
             }
         }
-
+        /// <summary>
+        /// valida la tercera respuesta.
+        /// </summary>
+        /// <param name="idea3">la Respuesta 1.</param>
+        /// <returns>
+        /// retorna false si la respuesta esta sin completar
+        /// retorna true si la respuesta a sido ingresado
+        /// </returns>
         public Boolean Verificaridea3(String idea3)
         {
             if (idea3 == "")
