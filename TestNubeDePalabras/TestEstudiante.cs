@@ -6,6 +6,12 @@ namespace TestNubeDePalabras
     [TestClass]
     public class TestEstudiante
     {
+        private TestContext testContextInstance;
+        public TestContext TestContext
+        {
+            get { return testContextInstance; }
+            set { testContextInstance = value; }
+        }
         /// <summary>
         /// Tests para verificar nombre.
         /// </summary>
@@ -24,6 +30,29 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
+
+        [TestMethod]
+        [DataSource("System.Data.OleDB",
+         @"Provider=Microsoft.ACE.OLEDB.12.0;
+         Data Source=E:\2020-II\Construccion de software\nombres.xlsx;
+         Extended Properties='Excel 12.0;
+         HDR=yes';",
+         "Nombres$",
+         DataAccessMethod.Sequential)]
+        public void TestVerificarNombre1()
+        {
+            // Arranque
+            String Nombre = Convert.ToString(TestContext.DataRow["Nombres"]);
+            Boolean respues;
+            Nube_de_palabras.Estudiante resp = new Nube_de_palabras.Estudiante();
+
+            //Act
+            respues = resp.VerificarNombre(Nombre);
+
+            //Assert
+            Assert.AreEqual(true, respues);
+        }
+
         /// <summary>
         /// Tests para verificar apellido.
         /// </summary>

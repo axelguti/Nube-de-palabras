@@ -83,19 +83,6 @@ namespace Nube_de_palabras
             com.Show();
         }
         /// <summary>
-        /// valida si tenemos conexion con la BD.
-        /// </summary>
-        private void Button1_Click_1(object sender, EventArgs e)
-        {
-            if(new Interaccion().verificarConexion()){
-                MessageBox.Show("Conexion esta abierta");
-            }
-            else
-            {
-                MessageBox.Show("Fallo la conexion con la base de datos");
-            }
-        }
-        /// <summary>
         /// Verificar la pregunta.
         /// </summary>
         /// <param name="pregun">Pregunta echa por el docente.</param>
