@@ -6,6 +6,9 @@ namespace TestNubeDePalabras
     [TestClass]
     public class TestPantallaProfesor
     {
+        /// <summary>
+        /// Tests para los datos de la pregunta.
+        /// </summary>
         [TestMethod]
         public void Test_DatosPregunta()
         {
@@ -20,7 +23,9 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true,respues);
         }
-
+        /// <summary>
+        /// Tests para la cantidad de preguntas.
+        /// </summary>
         [TestMethod]
         public void Test_DatosCantidadDePreguntas()
         {

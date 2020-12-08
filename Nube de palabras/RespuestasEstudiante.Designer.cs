@@ -45,6 +45,7 @@
             this.Respuesta5.Size = new System.Drawing.Size(119, 24);
             this.Respuesta5.TabIndex = 19;
             this.Respuesta5.Visible = false;
+            this.Respuesta5.TextChanged += new System.EventHandler(this.Respuesta5_TextChanged);
             // 
             // Respuesta8
             // 

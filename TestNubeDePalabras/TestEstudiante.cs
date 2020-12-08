@@ -6,7 +6,11 @@ namespace TestNubeDePalabras
     [TestClass]
     public class TestEstudiante
     {
+        /// <summary>
+        /// Tests para verificar nombre.
+        /// </summary>
         [TestMethod]
+        
         public void TestVerificarNombre()
         {
             // Arranque
@@ -20,7 +24,9 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
-
+        /// <summary>
+        /// Tests para verificar apellido.
+        /// </summary>
         [TestMethod]
         public void TestVerificarApellido()
         {
@@ -35,7 +41,9 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
-
+        /// <summary>
+        /// Tests para verificar rpimera Respuesta.
+        /// </summary>
         [TestMethod]
         public void TestVerificarIdea1()
         {
@@ -50,7 +58,9 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
-
+        /// <summary>
+        /// Tests para verificar segunda Pregunta.
+        /// </summary>
         [TestMethod]
         public void TestVerificarIdea2()
         {
@@ -65,7 +75,9 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
-
+        /// <summary>
+        /// Tests para verificar tercera Pregunta.
+        /// </summary>
         [TestMethod]
         public void TestVerificarIdea3()
         {

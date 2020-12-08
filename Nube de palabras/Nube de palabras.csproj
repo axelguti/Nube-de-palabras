@@ -65,7 +65,6 @@
     <Compile Include="RespuestasEstudiante.Designer.cs">
       <DependentUpon>RespuestasEstudiante.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interaccion.cs" />
     <Compile Include="Respuestas.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -19,7 +19,7 @@ namespace Nube_de_palabras
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

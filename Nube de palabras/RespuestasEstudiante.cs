@@ -13,6 +13,10 @@ namespace Nube_de_palabras
     public partial class RespuestasEstudiante : Form
     {
         public int conta = 0;
+
+        /// <summary>
+        /// valida la cantidad de respuesta que ingreso el estudiante
+        /// </summary>
         public RespuestasEstudiante()
         {
             InitializeComponent();
@@ -32,10 +36,14 @@ namespace Nube_de_palabras
             {
                 Respuesta1.Visible = true;
                 Respuesta2.Visible = true;
-                Respuesta3.Visible = false;
+                Respuesta3.Visible = true;
             }
 
         }
 
+        private void Respuesta5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
