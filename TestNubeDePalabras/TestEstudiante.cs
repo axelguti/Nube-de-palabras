@@ -70,6 +70,50 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
+
+        [TestMethod]
+        [DataSource("System.Data.OleDB",
+         @"Provider=Microsoft.ACE.OLEDB.12.0;
+         Data Source=E:\2020-II\Construccion de software\nombres.xlsx;
+         Extended Properties='Excel 12.0;
+         HDR=yes';",
+         "Apellidos$",
+         DataAccessMethod.Sequential)]
+        public void TestVerificarApellido1()
+        {
+            // Arranque
+            String apellido = Convert.ToString(TestContext.DataRow["Apellidos"]);
+            Boolean respues;
+            Nube_de_palabras.Estudiante resp = new Nube_de_palabras.Estudiante();
+
+            //Act
+            respues = resp.VerificarApellido(apellido);
+
+            //Assert
+            Assert.AreEqual(true, respues);
+        }
+
+        [TestMethod]
+        [DataSource("System.Data.OleDB",
+         @"Provider=Microsoft.ACE.OLEDB.12.0;
+         Data Source=E:\2020-II\Construccion de software\nombres.xlsx;
+         Extended Properties='Excel 12.0;
+         HDR=yes';",
+         "Respuesta1$",
+         DataAccessMethod.Sequential)]
+        public void TestVerificarDatosIdea1()
+        {
+            // Arranque
+            String idea1 = Convert.ToString(TestContext.DataRow["Respuesta1"]);
+            Boolean respues;
+            Nube_de_palabras.Estudiante resp = new Nube_de_palabras.Estudiante();
+
+            //Act
+            respues = resp.VerificarIdea1(idea1);
+
+            //Assert
+            Assert.AreEqual(true, respues);
+        }
         /// <summary>
         /// Tests para verificar rpimera Respuesta.
         /// </summary>
@@ -104,6 +148,27 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
+        [TestMethod]
+        [DataSource("System.Data.OleDB",
+         @"Provider=Microsoft.ACE.OLEDB.12.0;
+         Data Source=E:\2020-II\Construccion de software\nombres.xlsx;
+         Extended Properties='Excel 12.0;
+         HDR=yes';",
+         "Respuesta2$",
+         DataAccessMethod.Sequential)]
+        public void TestVerificarDatosIdea2()
+        {
+            // Arranque
+            String idea2 = Convert.ToString(TestContext.DataRow["Respuesta2"]);
+            Boolean respues;
+            Nube_de_palabras.Estudiante resp = new Nube_de_palabras.Estudiante();
+
+            //Act
+            respues = resp.VerificarIdea2(idea2);
+
+            //Assert
+            Assert.AreEqual(true, respues);
+        }
         /// <summary>
         /// Tests para verificar tercera Pregunta.
         /// </summary>
@@ -117,6 +182,27 @@ namespace TestNubeDePalabras
 
             //Act
             respues = resp.Verificaridea3(Idea3);
+
+            //Assert
+            Assert.AreEqual(true, respues);
+        }
+
+        [DataSource("System.Data.OleDB",
+         @"Provider=Microsoft.ACE.OLEDB.12.0;
+         Data Source=E:\2020-II\Construccion de software\nombres.xlsx;
+         Extended Properties='Excel 12.0;
+         HDR=yes';",
+         "Respuesta3$",
+         DataAccessMethod.Sequential)]
+        public void TestVerificarDatosIdea3()
+        {
+            // Arranque
+            String idea3 = Convert.ToString(TestContext.DataRow["Respuesta3"]);
+            Boolean respues;
+            Nube_de_palabras.Estudiante resp = new Nube_de_palabras.Estudiante();
+
+            //Act
+            respues = resp.Verificaridea3(idea3);
 
             //Assert
             Assert.AreEqual(true, respues);
