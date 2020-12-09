@@ -30,7 +30,9 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
-
+        /// <summary>
+        /// Tests de pruebas controlada por datos.
+        /// </summary>
         [TestMethod]
         [DataSource("System.Data.OleDB",
          @"Provider=Microsoft.ACE.OLEDB.12.0;
@@ -70,7 +72,9 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
-
+        /// <summary>
+        /// Tests de pruebas controlada por datos.
+        /// </summary>
         [TestMethod]
         [DataSource("System.Data.OleDB",
          @"Provider=Microsoft.ACE.OLEDB.12.0;
@@ -92,7 +96,9 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
-
+        /// <summary>
+        /// Tests de pruebas controlada por datos.
+        /// </summary>
         [TestMethod]
         [DataSource("System.Data.OleDB",
          @"Provider=Microsoft.ACE.OLEDB.12.0;
@@ -148,6 +154,9 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
+        /// <summary>
+        /// Tests de pruebas controlada por datos.
+        /// </summary>
         [TestMethod]
         [DataSource("System.Data.OleDB",
          @"Provider=Microsoft.ACE.OLEDB.12.0;
@@ -186,7 +195,10 @@ namespace TestNubeDePalabras
             //Assert
             Assert.AreEqual(true, respues);
         }
-
+        /// <summary>
+        /// Tests de pruebas controlada por datos.
+        /// </summary>
+        [TestMethod]
         [DataSource("System.Data.OleDB",
          @"Provider=Microsoft.ACE.OLEDB.12.0;
          Data Source=E:\2020-II\Construccion de software\nombres.xlsx;
